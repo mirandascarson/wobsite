@@ -57,7 +57,8 @@ main {
 
 .circle-img {
   border-radius: 99999px;
-  width: 50%;
+  width: 150px;
+  height: 150px;
   display: block;
   position: absolute;
 }

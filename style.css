@@ -9,17 +9,25 @@ body {
 
 header {
    text-align: center;
-    display:block;
+   justify-content: center;
+   display:block;
+   padding: 0 130px;
 }
+
 
 nav {
   height: 100%;
   width: 130px;
+  top: 30px;
   left: 0px;
   float: left;
-  list-style-type:none;
+  position: fixed;
 }
 
+.nav_list {
+    list-style-type: none;
+
+}
 main {
   margin-left: 0px;
   margin-top: 50px;

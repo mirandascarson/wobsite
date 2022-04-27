@@ -10,7 +10,7 @@ body {
 header {
    text-align: center;
    justify-content: center;
-   display:block;
+   display: block;
    padding: 0 130px;
 }
 
@@ -21,7 +21,7 @@ nav {
   top: 30px;
   left: 0px;
   float: left;
-  position: fixed;
+  position: absolute;
 }
 
 .nav_list {
@@ -31,6 +31,25 @@ nav {
 main {
   margin-left: 0px;
   margin-top: 50px;
+}
+
+/* Thank you codeacademy for gallery code */
+.gallery {
+  margin-top: 20px;
+  padding-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  margin: 10px;
+}
+
+.gallery-item .thumbnail {
+  border: 5px solid #fff;
+  width: 200px;
+  height: 200px;
 }
 
 .carousel-container {

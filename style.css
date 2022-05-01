@@ -9,7 +9,7 @@ body {
 
 header {
    text-align: center;
-   font-size:clamp(16px, calc(16px + (28 - 16) * ((100vw - 360px) / 1560)), 48px)
+   font-size:clamp(16px, calc(16px + (28 - 16) * ((100vw - 360px) / 1560)), 48px);
    justify-content: center;
    display: block;
    padding: 0 130px;

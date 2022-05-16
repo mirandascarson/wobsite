@@ -1,5 +1,5 @@
 :root {
-  --carousel-time: 100s;
+  --carousel-time: 180s;
 }
 
 body {
@@ -31,7 +31,7 @@ nav {
 }
 main {
   margin-left: 0px;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 /* Thank you codeacademy for gallery code */
@@ -56,8 +56,8 @@ main {
 .carousel-container {
   position: relative;
   margin: auto;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 
 .carousel-object {
@@ -85,19 +85,24 @@ main {
 }
 
 .circle-img {
-  border-radius: 99999px;
-  width: 150px;
-  height: 150px;
+  border-radius: 50%;
+  filter: blur(1px);
+  width: 45%;
+  height: 45%;
   display: block;
   position: absolute;
+  border-style: outset;
+  border-color: black;
 }
 
 .circle-txt{
 position: absolute;
-bottom:50px;
 text-align: center;
+font-size: 20px;
+font-weight: bold;
+background-color: white;
 }
 
 p{
-  font-size: 14px;
+  font-size: 16px;
 }

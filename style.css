@@ -17,7 +17,7 @@ header {
 
 nav {
   height: 100%;
-  width: 130px;
+  min-width: 150px;
   top: 30px;
   left: 0px;
   float: left;
@@ -26,6 +26,19 @@ nav {
 
 .nav_list {
     list-style-type: none;
+}
+
+.nav_list li a {
+  color: black;
+}
+
+
+/*to be combined when all are links?*/
+.nav_list li:hover {
+  color: gray;
+}
+.nav_list li:hover a {
+  color: gray;
 }
 
 main {
@@ -89,6 +102,8 @@ main {
   outline: 30px solid white;
   background-color: white;
 }
+
+
 
 .circle-txt{
 position: absolute;

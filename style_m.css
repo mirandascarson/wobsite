@@ -1,5 +1,5 @@
 :root {
-  --carousel-time: 150s;
+  --carousel-time: 180s;
 }
 
 body {
@@ -68,101 +68,37 @@ main {
   margin-top: 100px;
 }
 
-
-
-
-
-
-@media screen and (min-width: 651px) {
-  .carousel-container {
-    position: relative;
-    margin: auto;
-    width: 400px;
-    height: 400px;
-  }
+.carousel-container {
+  position: relative;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+}
 
 .carousel-object {
   position: absolute;
-  top: 0;
+  top: 100px;
   bottom: 0;
-  left: 0;
+  left: 100px;
   right: 0;
+  width: 96px;
+  height: 96px;
   animation: rotate var(--carousel-time) linear infinite;
   animation-delay: calc(-1*var(--carousel-time)*var(--carousel-position));
   display: flex;
   align-items: center;
   justify-content: center;
-  }
-
-  .circle-img {
-    border-radius: 50%;
-    filter: blur(0px);
-    width: 45%;
-    height: 45%;
-    display: block;
-    position: absolute;
-    border: 2px solid black;
-    outline: 30px solid white;
-    background-color: white;
-  }
-
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg) translateX(40%) rotate(0deg);
-    }
-
-    to {
-      transform: rotate(360deg) translateX(40%) rotate(-360deg);
-    }
-  }
 }
 
-@media screen and (max-width: 650px) {
-  .carousel-container {
-    position: relative;
-    margin: auto;
-    width: 300px;
-    height: 300px;
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) translateX(140%) rotate(0deg);
   }
 
-  .carousel-object {
-    position: absolute;
-    top: 100px;
-    bottom: 0;
-    left: 100px;
-    right: 0;
-    width: 96px;
-    height: 96px;
-    animation: rotate_m var(--carousel-time) linear infinite;
-    animation-delay: calc(-1*var(--carousel-time)*var(--carousel-position));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .circle-img {
-    border-radius: 50%;
-    filter: blur(0px);
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    border: 2px solid black;
-    outline: 30px solid white;
-    background-color: white;
-  }
-
-  @keyframes rotate_m {
-    from {
-      transform: rotate(0deg) translateX(140%) rotate(0deg);
-    }
-
-    to {
-      transform: rotate(360deg) translateX(80%) rotate(-360deg);
-    }
+  to {
+    transform: rotate(360deg) translateX(80%) rotate(-360deg);
   }
 }
-
 
 .carousel-dot {
   height: 80%;
@@ -178,6 +114,19 @@ main {
   transform:translate(-50%, -50%);
 
 }
+
+.circle-img {
+  border-radius: 50%;
+  filter: blur(0px);
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  border: 2px solid black;
+  outline: 30px solid white;
+  background-color: white;
+}
+
 
 
 .circle-txt{
@@ -196,9 +145,6 @@ p{
 
 
 
-
-
-/* Thank you codeacademy for gallery code */
 .gallery {
   margin-top: 20px;
   padding-top: 0px;
